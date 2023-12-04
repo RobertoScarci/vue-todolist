@@ -65,11 +65,15 @@ i{
 }
 
 ul.todo-list span > i.fa-check:hover{
-    color: green;
+    color: rgb(9, 214, 9);
 }
 
 ul.todo-list span > i.fa-x:hover{
     color: red;
+}
+
+.green{
+    color: rgb(3, 212, 3);
 }
 
 .text-through{

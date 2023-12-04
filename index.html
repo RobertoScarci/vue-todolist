@@ -29,7 +29,7 @@
                         {{ todoElement.text }}
                     </p>
                     <span>
-                        <i class="fa-solid fa-check" @click="doneOrNot(todoElement)"></i>
+                        <i class="fa-solid fa-check" :class="(todoElement.done === true) ? 'green' : '' " @click="doneOrNot(todoElement)"></i>
                         <i class="fa-solid fa-x" @click="removeTodoElement(index)"></i>
                     </span>
                 </li>
