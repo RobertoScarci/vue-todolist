@@ -42,7 +42,12 @@ createApp({
         removeTodoElement(indexToBeRemoved){
             console.log(indexToBeRemoved);
             this.todoList.splice(indexToBeRemoved, 1);
-        }
+        },
+
+        newElement(element) {
+            element.length > 0 ? this.todoList.push({text: element, done: false}) : 'error';
+            this.element = "";
+        },
 
     },
 }).mount('#app');
