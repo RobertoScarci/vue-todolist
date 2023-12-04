@@ -21,6 +21,7 @@ main.wrapper{
     width: 40%;
     margin: 0 auto;
     padding: 2rem;
+    padding-bottom: 1rem;
     background-color: antiquewhite;
     border-radius: 10px;
 }

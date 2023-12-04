@@ -40,7 +40,6 @@ createApp({
         doneOrNot(element) { element.done = element.done == false ? true : false; },
 
         removeTodoElement(indexToBeRemoved){
-            console.log(indexToBeRemoved);
             this.todoList.splice(indexToBeRemoved, 1);
         },
 
