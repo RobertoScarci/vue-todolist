@@ -7,7 +7,7 @@ createApp({
             todoList : [
                 {
                     text: 'Guardare tutta la saga di Star Wars',
-                    done: 'true'
+                    done: 'false'
                 },
                 {
                     text: 'Comprare una nuova scheda madre',
@@ -23,7 +23,7 @@ createApp({
                 },
                 {
                     text: 'Portare la propria ragazza al cinema',
-                    done: 'true'
+                    done: 'false'
                 },
                 {
                     text: 'Pagare le bollette prima di essere sfrattati di casa',
@@ -37,10 +37,12 @@ createApp({
         }
     },
     methods: {
+        doneOrNot(element) { element.done = element.done == false ? true : false; },
 
         removeTodoElement(indexToBeRemoved){
             console.log(indexToBeRemoved);
             this.todoList.splice(indexToBeRemoved, 1);
         }
+
     },
 }).mount('#app');

@@ -53,14 +53,22 @@ ul.todo-list{
 
 ul.todo-list > li.todo-item{
     padding: .5rem 1rem;
-    border-top: 1px solid grey;
     border-bottom: 1px solid grey;
     margin-bottom: 1rem;
+    font-size: 1.2rem;
     display: flex;
     justify-content: space-between;
 }
 
-ul.todo-list span > i:hover{
+i{
+    padding: .5rem;
+}
+
+ul.todo-list span > i.fa-check:hover{
+    color: green;
+}
+
+ul.todo-list span > i.fa-x:hover{
     color: red;
 }
 

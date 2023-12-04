@@ -23,22 +23,13 @@
                 <input type="text" class="new-todo-element" name="userTodo" id="userTodo">
                 <button>Aggiungi</button>
             </div>
-            <ul class="todo-list" v-if="todoList.done = true">
-                <li class="todo-item" v-for="todoElement in todoList">
-                    <p class="text-through">
-                        {{ todoElement }}
+            <ul class="todo-list">
+                <li class="todo-item" v-for="(todoElement, index) in todoList">
+                    <p :class="(todoElement.done === true) ? 'text-through' : '' ">
+                        {{ todoElement.text }}
                     </p>
                     <span>
-                        <i class="fa-solid fa-x" @click="removeTodoElement(index)"></i>
-                    </span>
-                </li>
-            </ul>
-            <ul class="todo-list" v-else>
-                <li class="todo-item" v-for="todoElement in todoList">
-                    <p>
-                        {{ todoElement }}
-                    </p>
-                    <span>
+                        <i class="fa-solid fa-check" @click="doneOrNot(todoElement)"></i>
                         <i class="fa-solid fa-x" @click="removeTodoElement(index)"></i>
                     </span>
                 </li>
