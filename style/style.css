@@ -30,6 +30,7 @@ div.taskbar{
 }
 
 button{
+    margin-left: 2rem;
     height: 2rem;
     width: 5rem;
     border: none;
@@ -39,10 +40,11 @@ button{
 
 input.new-todo-element{
     padding: .5rem 1rem;
+    width: 22rem;
     border-radius: .5rem;
     margin-bottom: 2rem;
     margin-left: 1rem;
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 
 ul.todo-list{
@@ -60,4 +62,8 @@ ul.todo-list > li.todo-item{
 
 ul.todo-list span > i:hover{
     color: red;
+}
+
+.text-through{
+    text-decoration: line-through;
 }
