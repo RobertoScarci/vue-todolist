@@ -7,31 +7,31 @@ createApp({
             todoList : [
                 {
                     text: 'Guardare tutta la saga di Star Wars',
-                    done: 'false'
+                    done: false
                 },
                 {
                     text: 'Comprare una nuova scheda madre',
-                    done: 'false'
+                    done: false
                 },
                 {
                     text: 'Andare a fare la spesa prima di morire di fame',
-                    done: 'false'
+                    done: false
                 },
                 {
                     text: 'Ricordarsi il nome dei propri nipoti',
-                    done: 'false'
+                    done: false
                 },
                 {
                     text: 'Portare la propria ragazza al cinema',
-                    done: 'false'
+                    done: false
                 },
                 {
                     text: 'Pagare le bollette prima di essere sfrattati di casa',
-                    done: 'false'
+                    done: false
                 },
                 {
                     text: 'Guardare gli spin off di Star Wars',
-                    done: 'false'
+                    done: false
                 },
             ]
         }
