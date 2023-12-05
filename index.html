@@ -23,7 +23,7 @@
                 <input type="text" class="new-todo-element" name="userTodo" id="userTodo" v-model="element" @keyup.enter="newElement(element)">
                 <button @click="newElement(element)">Aggiungi</button>
             </div>
-            <ul class="todo-list">
+            <ul class="todo-list" v-if="todoList.length > 0">
                 <li class="todo-item" v-for="(todoElement, index) in todoList">
                     <p :class="(todoElement.done === true) ? 'text-through' : '' ">
                         {{ todoElement.text }}
@@ -34,6 +34,13 @@
                     </span>
                 </li>
             </ul>
+            <ul class="todo-list" v-else>
+                <p>
+                    Hai finito tutte le missioni del giorno...Forza aggiungi nuove sfide!
+                </p>
+                <img src="https://steamuserimages-a.akamaihd.net/ugc/884104767788743201/BCEA17C2B9D8A6B4EE3A9DA85B828C82F28BC4C0/?imw=637&imh=358&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true" alt="">
+            </ul>
+            
         </main>
     </div>
 
